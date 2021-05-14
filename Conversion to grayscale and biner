@@ -1,0 +1,6 @@
+clc; clear; close all;
+I = imread('https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/2019/05/27/3899749277.jpg');
+K = rgb2gray(I);
+figure, imshow (K); title ('Konversi Grayscale')
+J = im2bw (K,0.5);
+figure, imshow (J); title ('Konversi Biner')
